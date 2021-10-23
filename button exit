@@ -1,0 +1,15 @@
+from tkinter import *
+root =  None
+def buttonPushed():
+    global root
+    root.destroy()
+
+def main():
+    global root
+    root = Tk()
+    w = Label(root,text="HELLWOrld")
+    w.pack()
+    myButton = Button(root,text="exit",command = buttonPushed)
+    myButoon.pack()
+    root.mainloop()
+    main()
